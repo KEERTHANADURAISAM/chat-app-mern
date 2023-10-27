@@ -26,7 +26,7 @@ const Chat = () => {
       if (roomId) {
         try {
           const response = await axios.get(
-            `https://chat-server-wmi4.onrender.com/room/${roomId}`
+            `https://zen-server.onrender.com/room/${roomId}`
           );
           console.log(response);
           setRoomName(response.data.groupName);
